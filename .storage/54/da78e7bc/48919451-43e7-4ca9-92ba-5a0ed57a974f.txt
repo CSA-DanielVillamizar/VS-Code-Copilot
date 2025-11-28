@@ -1,0 +1,82 @@
+$ cd /workspace/presentation && pnpm run lint && pnpm run build
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/presentation
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 2131 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.00 kB │ gzip:   0.51 kB
+dist/assets/index-DERgJyzA.css           148.17 kB │ gzip:  18.10 kB
+dist/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-BWlGTmq9.js         150.41 kB │ gzip:  51.39 kB
+dist/assets/html2canvas.esm-CBrSDip1.js  201.42 kB │ gzip:  48.03 kB
+dist/assets/index-C_-rhapV.js            928.96 kB │ gzip: 289.72 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 10.69s
+$ cd /workspace/presentation && cat src/pages/slides/Slide10DemoPrompt.tsx | grep -A 20 "const handleCopy"
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(demoPrompt);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  return (
+    <section className="flex h-full flex-col bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-12 py-8 overflow-y-auto">
+      <h1 
+        ref={titleRef}
+        className="text-4xl font-bold text-white mb-4"
+      >
+        Prompt Listo para Demo en Vivo
+      </h1>
+
+      <div className="bg-gradient-to-r from-blue-500/20 to-violet-500/20 border border-blue-500/50 rounded-xl p-4 mb-4">
+        <div className="flex items-center gap-3 mb-2">
+$ cd /workspace/presentation && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/presentation
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 2131 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.00 kB │ gzip:   0.50 kB
+dist/assets/index-DERgJyzA.css           148.17 kB │ gzip:  18.10 kB
+dist/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-hyY29tYw.js         150.41 kB │ gzip:  51.39 kB
+dist/assets/html2canvas.esm-CBrSDip1.js  201.42 kB │ gzip:  48.03 kB
+dist/assets/index-DOroItEc.js            930.03 kB │ gzip: 289.96 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 10.40s

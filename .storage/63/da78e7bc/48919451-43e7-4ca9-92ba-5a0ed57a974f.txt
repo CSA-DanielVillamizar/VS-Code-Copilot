@@ -1,0 +1,268 @@
+$ cd /workspace/presentation && pnpm run lint && pnpm run build
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/presentation
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 2131 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.00 kB │ gzip:   0.51 kB
+dist/assets/index-DERgJyzA.css           148.17 kB │ gzip:  18.10 kB
+dist/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-BWlGTmq9.js         150.41 kB │ gzip:  51.39 kB
+dist/assets/html2canvas.esm-CBrSDip1.js  201.42 kB │ gzip:  48.03 kB
+dist/assets/index-C_-rhapV.js            928.96 kB │ gzip: 289.72 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 10.69s
+$ cd /workspace/presentation && cat src/pages/slides/Slide10DemoPrompt.tsx | grep -A 20 "const handleCopy"
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(demoPrompt);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  return (
+    <section className="flex h-full flex-col bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-12 py-8 overflow-y-auto">
+      <h1 
+        ref={titleRef}
+        className="text-4xl font-bold text-white mb-4"
+      >
+        Prompt Listo para Demo en Vivo
+      </h1>
+
+      <div className="bg-gradient-to-r from-blue-500/20 to-violet-500/20 border border-blue-500/50 rounded-xl p-4 mb-4">
+        <div className="flex items-center gap-3 mb-2">
+$ cd /workspace/presentation && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/presentation
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 2131 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.00 kB │ gzip:   0.50 kB
+dist/assets/index-DERgJyzA.css           148.17 kB │ gzip:  18.10 kB
+dist/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-hyY29tYw.js         150.41 kB │ gzip:  51.39 kB
+dist/assets/html2canvas.esm-CBrSDip1.js  201.42 kB │ gzip:  48.03 kB
+dist/assets/index-DOroItEc.js            930.03 kB │ gzip: 289.96 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 10.40s
+$ cd /workspace/presentation && pnpm run lint && pnpm run build
+
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+
+
+> shadcnui@ build /workspace/presentation
+> vite build
+
+vite v5.4.19 building for production...
+transforming...
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 2131 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            1.00 kB │ gzip:   0.51 kB
+dist/assets/index-DERgJyzA.css           148.17 kB │ gzip:  18.10 kB
+dist/assets/purify.es-CQJ0hv7W.js         21.82 kB │ gzip:   8.58 kB
+dist/assets/index.es-DABEiG60.js         150.41 kB │ gzip:  51.39 kB
+dist/assets/html2canvas.esm-CBrSDip1.js  201.42 kB │ gzip:  48.03 kB
+dist/assets/index-Dnnv3xRV.js            930.03 kB │ gzip: 289.96 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 10.29s
+$ cd /workspace/presentation && git init
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /workspace/presentation/.git/
+$ cd /workspace/presentation && git add .
+
+$ cd /workspace/presentation && git commit -m "Initial commit - Presentación VS Code + GitHub Copilot"
+
+[master (root-commit) ac0b473] Initial commit - Presentación VS Code + GitHub Copilot
+ 130 files changed, 18979 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .mgx/config.yaml
+ create mode 100644 README.md
+ create mode 100644 components.json
+ create mode 100644 eslint.config.js
+ create mode 100644 index.html
+ create mode 100644 package.json
+ create mode 100644 pnpm-lock.yaml
+ create mode 100644 postcss.config.js
+ create mode 100644 public/PROMPT_MAESTRO_TEMPLATE.md
+ create mode 100644 public/assets/ai-copilot-assistant.jpg
+ create mode 100644 public/assets/ai-models-comparison.jpg
+ create mode 100644 public/assets/hero-coding-workspace.jpg
+ create mode 100644 public/assets/live-coding-demo.jpg
+ create mode 100644 public/assets/master-prompt-document.jpg
+ create mode 100644 public/assets/prompt-engineering.jpg
+ create mode 100644 public/assets/vscode-interface.jpg
+ create mode 100644 public/assets/workshop-activity.jpg
+ create mode 100644 public/favicon.svg
+ create mode 100644 public/images/SoftwareDevelopment.jpg
+ create mode 100644 public/robots.txt
+ create mode 100644 src/App.css
+ create mode 100644 src/App.tsx
+ create mode 100644 src/components/core/Base.ts
+ create mode 100644 src/components/core/ControlBar.tsx
+ create mode 100644 src/components/core/DirectSlidePreview.tsx
+ create mode 100644 src/components/core/ElementAnimationWrapper.tsx
+ create mode 100644 src/components/core/FullScreenPortal.tsx
+ create mode 100644 src/components/core/OutlinePreview.tsx
+ create mode 100644 src/components/core/PPTBottomBar.tsx
+ create mode 100644 src/components/core/PPTContainer.tsx
+ create mode 100644 src/components/core/PPTNavigation.tsx
+ create mode 100644 src/components/core/PPTPlatformStage.tsx
+ create mode 100644 src/components/core/SlideAnimationManager.tsx
+ create mode 100644 src/components/core/SlideAnimationWrapper.tsx
+ create mode 100644 src/components/core/SlideGrid.tsx
+ create mode 100644 src/components/core/SlideRegistry.ts
+ create mode 100644 src/components/core/SlideThumbnailPreloader.tsx
+ create mode 100644 src/components/core/importSlide.ts
+ create mode 100644 src/components/layout/app-sidebar.tsx
+ create mode 100644 src/components/layout/nav-main.tsx
+ create mode 100644 src/components/layout/nav-projects.tsx
+ create mode 100644 src/components/layout/nav-secondary.tsx
+ create mode 100644 src/components/layout/nav-user.tsx
+ create mode 100644 src/components/ui/accordion.tsx
+ create mode 100644 src/components/ui/alert-dialog.tsx
+ create mode 100644 src/components/ui/alert.tsx
+ create mode 100644 src/components/ui/aspect-ratio.tsx
+ create mode 100644 src/components/ui/avatar.tsx
+ create mode 100644 src/components/ui/badge.tsx
+ create mode 100644 src/components/ui/breadcrumb.tsx
+ create mode 100644 src/components/ui/button.tsx
+ create mode 100644 src/components/ui/calendar.tsx
+ create mode 100644 src/components/ui/card.tsx
+ create mode 100644 src/components/ui/carousel.tsx
+ create mode 100644 src/components/ui/chart.tsx
+ create mode 100644 src/components/ui/checkbox.tsx
+ create mode 100644 src/components/ui/collapsible.tsx
+ create mode 100644 src/components/ui/command.tsx
+ create mode 100644 src/components/ui/context-menu.tsx
+ create mode 100644 src/components/ui/dialog.tsx
+ create mode 100644 src/components/ui/drawer.tsx
+ create mode 100644 src/components/ui/dropdown-menu.tsx
+ create mode 100644 src/components/ui/form.tsx
+ create mode 100644 src/components/ui/hover-card.tsx
+ create mode 100644 src/components/ui/input-otp.tsx
+ create mode 100644 src/components/ui/input.tsx
+ create mode 100644 src/components/ui/label.tsx
+ create mode 100644 src/components/ui/menubar.tsx
+ create mode 100644 src/components/ui/navigation-menu.tsx
+ create mode 100644 src/components/ui/pagination.tsx
+ create mode 100644 src/components/ui/popover.tsx
+ create mode 100644 src/components/ui/progress.tsx
+ create mode 100644 src/components/ui/radio-group.tsx
+ create mode 100644 src/components/ui/resizable.tsx
+ create mode 100644 src/components/ui/scroll-area.tsx
+ create mode 100644 src/components/ui/select.tsx
+ create mode 100644 src/components/ui/separator.tsx
+ create mode 100644 src/components/ui/sheet.tsx
+ create mode 100644 src/components/ui/sidebar.tsx
+ create mode 100644 src/components/ui/skeleton.tsx
+ create mode 100644 src/components/ui/slider.tsx
+ create mode 100644 src/components/ui/sonner.tsx
+ create mode 100644 src/components/ui/switch.tsx
+ create mode 100644 src/components/ui/table.tsx
+ create mode 100644 src/components/ui/tabs.tsx
+ create mode 100644 src/components/ui/textarea.tsx
+ create mode 100644 src/components/ui/toast.tsx
+ create mode 100644 src/components/ui/toaster.tsx
+ create mode 100644 src/components/ui/toggle-group.tsx
+ create mode 100644 src/components/ui/toggle.tsx
+ create mode 100644 src/components/ui/tooltip.tsx
+ create mode 100644 src/components/ui/use-toast.ts
+ create mode 100644 src/decorators/RegisterSlide.ts
+ create mode 100644 src/hooks/use-mobile.tsx
+ create mode 100644 src/hooks/use-toast.ts
+ create mode 100644 src/hooks/useLanguage.ts
+ create mode 100644 src/hooks/usePDFExport.ts
+ create mode 100644 src/hooks/usePPTControls.ts
+ create mode 100644 src/hooks/useSlideAnimation.ts
+ create mode 100644 src/hooks/useSlideGroupedAnimation.ts
+ create mode 100644 src/hooks/useSlideThumbnail.ts
+ create mode 100644 src/index.css
+ create mode 100644 src/lib/animation-mapping.ts
+ create mode 100644 src/lib/i18n.ts
+ create mode 100644 src/lib/utils.ts
+ create mode 100644 src/main.tsx
+ create mode 100644 src/pages/Index.tsx
+ create mode 100644 src/pages/NotFound.tsx
+ create mode 100644 src/pages/slides/Slide01Welcome.tsx
+ create mode 100644 src/pages/slides/Slide02VSCode.tsx
+ create mode 100644 src/pages/slides/Slide03Copilot.tsx
+ create mode 100644 src/pages/slides/Slide04Models.tsx
+ create mode 100644 src/pages/slides/Slide05PromptsP1.tsx
+ create mode 100644 src/pages/slides/Slide06PromptsP2.tsx
+ create mode 100644 src/pages/slides/Slide07MasterPrompt.tsx
+ create mode 100644 src/pages/slides/Slide08Demo.tsx
+ create mode 100644 src/pages/slides/Slide09Activity.tsx
+ create mode 100644 src/pages/slides/Slide10DemoPrompt.tsx
+ create mode 100644 src/store/useAppStore.ts
+ create mode 100644 src/types/ppt.ts
+ create mode 100644 src/types/snapdom.ts
+ create mode 100644 src/vite-env.d.ts
+ create mode 100644 tailwind.config.ts
+ create mode 100644 template_config.json
+ create mode 100644 todo.md
+ create mode 100644 tsconfig.app.json
+ create mode 100644 tsconfig.json
+ create mode 100644 tsconfig.node.json
+ create mode 100644 vite.config.ts
+$ cd /workspace/presentation && git branch -M main
+
+$ cd /workspace/presentation && git remote add origin https://github.com/CSA-DanielVillamizar/VS-Code-Copilot.git
+
+$ cd /workspace/presentation && git push -u origin main
+
+fatal: could not read Username for 'https://github.com': No such device or address

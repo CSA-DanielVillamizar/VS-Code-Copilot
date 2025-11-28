@@ -1,0 +1,7 @@
+$ cd /workspace/presentation && rm src/pages/slides/IntroSlide.tsx src/pages/slides/end.tsx
+$ cd /workspace/presentation && pnpm run lint
+
+
+> shadcnui@ lint /workspace/presentation
+> eslint --quiet ./src
+

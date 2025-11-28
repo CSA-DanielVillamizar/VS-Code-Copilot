@@ -1,0 +1,1 @@
+$ cd /workspace/presentation && rm src/pages/slides/IntroSlide.tsx src/pages/slides/end.tsx

@@ -1,0 +1,50 @@
+$ cd /workspace && ls -la
+total 46006
+drwxr-xr-x 918 root root 23564288 Nov 28  2025 .
+drwxr-xr-x   1 root root      149 Nov 28 01:35 ..
+-rw-r--r--   1 root root  3457187 Nov 28  2025 .MGXEnv.json
+drwxr-xr-x   3 root root     8192 Nov 28 01:28 .MGXTools
+drwxr-xr-x 465 root root 12369920 Nov 28 03:02 .git
+-rw-r--r--   1 root root     1472 Nov 26 21:24 .gitattributes
+-rw-r--r--   1 root root      476 Nov 26 21:24 .gitignore
+-rw-r--r--   1 root root     1129 Nov 28  2025 .timeline.json
+-rw-r--r--   1 root root     3349 Nov 28 02:49 .wiki.md
+-rw-r--r--   1 root root    63875 Nov 28 01:24 SPEC_PRESENTACION_VSCODE_COPILOT.md
+drwxr-xr-x 445 root root  7639040 Nov 28  2025 presentation
+$ cd /workspace/presentation && ls -la
+
+total 37891
+drwxr-xr-x 445 root root  7639040 Nov 28  2025 .
+drwxr-xr-x 918 root root 23564288 Nov 28  2025 ..
+drwxr-xr-x 297 root root  3932160 Nov 28 02:49 .git
+-rw-r--r--   1 root root      253 Sep  4 02:53 .gitignore
+drwxr-xr-x   3 root root     8192 Sep  4 02:53 .mgx
+-rw-r--r--   1 root root     6539 Nov 28 01:45 README.md
+-rw-r--r--   1 root root      414 Sep  4 02:53 components.json
+-rw-r--r--   1 root root      789 Sep  4 02:53 eslint.config.js
+-rw-r--r--   1 root root      902 Nov 28 01:39 index.html
+drwxr-xr-x  19 root root     4096 Nov 28 03:09 node_modules
+-rw-r--r--   1 root root     3378 Oct 26 20:24 package.json
+-rw-r--r--   1 root root   232938 Oct 26 20:24 pnpm-lock.yaml
+-rw-r--r--   1 root root       80 Sep  4 02:53 postcss.config.js
+drwxr-xr-x  16 root root  2682880 Nov 28 01:44 public
+drwxr-xr-x 115 root root   712704 Oct 26 20:24 src
+-rw-r--r--   1 root root     2553 Sep  4 02:53 tailwind.config.ts
+-rw-r--r--   1 root root     1410 Oct 26 20:24 template_config.json
+-rw-r--r--   1 root root     2973 Nov 28 01:39 todo.md
+-rw-r--r--   1 root root      722 Oct 26 20:24 tsconfig.app.json
+-rw-r--r--   1 root root      381 Sep  4 02:53 tsconfig.json
+-rw-r--r--   1 root root      481 Sep  4 02:53 tsconfig.node.json
+-rw-r--r--   1 root root      790 Nov 11 23:33 vite.config.ts
+$ cd /workspace/presentation && find . -maxdepth 2 -type f -name "*.json" -o -name "*.ts" -o -name "*.html" | head -20
+
+./components.json
+./index.html
+./package.json
+./src/vite-env.d.ts
+./tailwind.config.ts
+./template_config.json
+./tsconfig.app.json
+./tsconfig.json
+./tsconfig.node.json
+./vite.config.ts

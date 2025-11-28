@@ -1,0 +1,13 @@
+$ cd /workspace && ls -la
+total 46006
+drwxr-xr-x 918 root root 23564288 Nov 28  2025 .
+drwxr-xr-x   1 root root      149 Nov 28 01:35 ..
+-rw-r--r--   1 root root  3457187 Nov 28  2025 .MGXEnv.json
+drwxr-xr-x   3 root root     8192 Nov 28 01:28 .MGXTools
+drwxr-xr-x 465 root root 12369920 Nov 28 03:02 .git
+-rw-r--r--   1 root root     1472 Nov 26 21:24 .gitattributes
+-rw-r--r--   1 root root      476 Nov 26 21:24 .gitignore
+-rw-r--r--   1 root root     1129 Nov 28  2025 .timeline.json
+-rw-r--r--   1 root root     3349 Nov 28 02:49 .wiki.md
+-rw-r--r--   1 root root    63875 Nov 28 01:24 SPEC_PRESENTACION_VSCODE_COPILOT.md
+drwxr-xr-x 445 root root  7639040 Nov 28  2025 presentation
